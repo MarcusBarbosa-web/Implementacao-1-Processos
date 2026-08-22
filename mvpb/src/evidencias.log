@@ -328,4 +328,68 @@ Segmentation fault (core dumped)
 [?2004lProcessflow> run inexistencia
 Tarefa não encontrada
 Processflow> exit
-[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mv
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> task ok1 /bin/echo um
+Processflow> task ok2 /bin/echo dois
+Processflow> run sequential ok1 naoexiste ok2             vazio ok2
+um
+Tarefa não encontrada
+dois
+Processflow> xyz abc
+Essa função não existe
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task coisas /coisa/coisada/coisando/sla
+Processflow> run coisas
+Erro no filhoProcessflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task coisas /coisa/coisada/coisando/sla
+Processflow> run coisas
+Erro no filho
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git add .
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git commit -m ""2"," "R"u"b"r"i"c"a"[1PRubrica"[1PRubrica"[1PRubrica"2Rubrica" Rubrica"[C[1Pubrica"rubrica"[C[C[C[C[C[C," "[7mSequencial + paralelo[27m"Sequencial + paralelo"[C[C
+[?2004l[main d4706d7] 2 rubrica, Sequencial + paralelo
+ 3 files changed, 248 insertions(+), 6 deletions(-)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mgit push -u origin main[27mgit push -u origin main
+[?2004lEnumerating objects: 15, done.
+Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 13.06 KiB | 2.18 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git
+   7e0ad08..d4706d7  main -> main
+branch 'main' set up to track 'origin/main'.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git push -u origin maincommit -m "2 rubrica, Sequencial + paralelo"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgcc -o processflow processflow.c[27mgcc -o processflow processflow.c
+[?2004l[01m[Kcc1:[m[K [01;31m[Kfatal error: [m[Kprocessflow.c: No such file or directory
+compilation terminated.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -o processflow processflow.c[9Pit push -u origin maincommit -m "2 rubrica, Sequencial + paralelo"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:21:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   21 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[19Po processflow processflow.c[9Pit push -u origin maincommit -m "2 rubrica, Sequencial + paralelo"add .[K./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> output listar saida.txt
+Processflow> run listar
+Processflow> exit
+[?2004h]0;mar

@@ -3,12 +3,17 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include <fcntl.h>
 
 typedef struct node{
     char *nome;
     char *caminho;
     char **comando;
     struct node *next;
+
+    char *arquivosai;
+    char *arquivoentra;
+    int appendar;
 }node;
 
 node *lista_tarefas = NULL;
@@ -58,6 +63,10 @@ node* criar_tarefa(char *linha){
     tarefa->comando = alocacomando;
     tarefa->next = NULL;
 
+    tarefa->arquivosai = NULL;
+    tarefa->arquivoentra = NULL;
+    tarefa->appendar = 0;
+
     return tarefa;
 }
 
@@ -85,6 +94,30 @@ void executar_tarefa(char *nome){
 
     pid_t fok = fork();
     if(fok == 0){
+
+        if(tarefa->arquivosai != NULL){
+            int leitordearquivo;
+
+            if(tarefa->appendar == 1){
+                leitordearquivo = open(tarefa->arquivosai, O_WRONLY | O_CREAT | O_APPEND, 0644);
+
+            }else{
+                leitordearquivo = open(tarefa->arquivosai, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+
+            }
+            dup2(leitordearquivo, 1);
+            close(leitordearquivo);
+
+        }
+
+        int leitordearquivo;
+        if(tarefa->arquivoentra != NULL){
+            leitordearquivo = open(tarefa->arquivoentra, O_RDONLY);
+
+            dup2(leitordearquivo, 0);
+            close(leitordearquivo);
+        }
+
         execvp(tarefa->caminho, tarefa->comando);
 
         printf("Erro no filho\n");
@@ -108,12 +141,59 @@ pid_t executar_tarefa_parallel(char *nome){
 
     pid_t fok = fork();
     if(fok == 0){
+
+        if(tarefa->arquivosai != NULL){
+            int leitordearquivo;
+
+            if(tarefa->appendar == 1){
+                leitordearquivo = open(tarefa->arquivosai, O_WRONLY | O_CREAT | O_APPEND, 0644);
+
+            }else{
+                leitordearquivo = open(tarefa->arquivosai, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+
+            }
+            dup2(leitordearquivo, 1);
+            close(leitordearquivo);
+
+        }
+
+        int leitordearquivo;
+        if(tarefa->arquivoentra != NULL){
+            leitordearquivo = open(tarefa->arquivoentra, O_RDONLY);
+
+            dup2(leitordearquivo, 0);
+            close(leitordearquivo);
+        }
+
         execvp(tarefa->caminho, tarefa->comando);
 
         printf("Erro no filho");
         exit(1);
     }
+
     return fok;
+}
+
+void procurar_arquivo(char *nome, char *tipo, char *arquivo){
+    node *tarefa = procurar_tarefa(nome);
+    
+    if (tarefa == NULL){
+        printf("Tarefa nao existe\n");
+        return;
+    }
+    
+    if (strcmp (tipo, "input") == 0){
+        tarefa->arquivoentra = strdup(arquivo);
+
+    }else if (strcmp (tipo, "output") == 0){
+        tarefa->arquivosai = strdup(arquivo);
+        tarefa->appendar = 0;
+
+    }else if (strcmp (tipo, "append") == 0){
+        tarefa->arquivosai = strdup(arquivo);
+        tarefa->appendar = 1;
+    }
+
 }
 
 
@@ -177,6 +257,12 @@ int main(){
                 executar_tarefa(token2);
 
             }
+
+        }else if(strcmp(token1, "input") == 0 || strcmp(token1, "output") == 0 || strcmp(token1, "append") == 0){
+            char *nome = strtok(NULL, " ");
+            char *arquivo = strtok(NULL, " ");
+
+            procurar_arquivo(nome, token1, arquivo);
 
         }else if ((strcmp (token1, "exit") == 0)){
             break;
