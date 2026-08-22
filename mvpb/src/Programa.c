@@ -22,7 +22,15 @@ node* criar_tarefa(char *linha){
     char *copcaminho = strdup(caminho);
 
     char *comando = strtok(NULL, " ");
-    char *copcomando = strdup(comando);
+    char *copcomando;
+
+    if(comando != NULL){
+        copcomando = strdup(comando);
+
+    }else{
+        copcomando = NULL;
+
+    }
 
     char **alocacomando = malloc(sizeof(char*));
     alocacomando[0] = copcaminho;
@@ -79,7 +87,7 @@ void executar_tarefa(char *nome){
     if(fok == 0){
         execvp(tarefa->caminho, tarefa->comando);
 
-        printf("Erro no filho");
+        printf("Erro no filho\n");
         exit(1);
 
     }else if (fok >= 1){
@@ -89,6 +97,28 @@ void executar_tarefa(char *nome){
         printf("Não foi possível executar a tarefa\n");
     }
 }
+
+pid_t executar_tarefa_parallel(char *nome){
+    node *tarefa = procurar_tarefa(nome);
+
+    if (tarefa == NULL){
+        printf("Tarefa não encontrada\n");
+        return -1;
+    }
+
+    pid_t fok = fork();
+    if(fok == 0){
+        execvp(tarefa->caminho, tarefa->comando);
+
+        printf("Erro no filho");
+        exit(1);
+    }
+    return fok;
+}
+
+
+
+
 
 int main(){
     char linha[3000];
@@ -108,9 +138,45 @@ int main(){
             lista_tarefas = tarefa;
 
         }else if((strcmp (token1, "run") == 0)){
-            char *nome = strtok(NULL, " ");
-            nome[strcspn(nome, "\n")] = '\0';
-            executar_tarefa(nome);
+            char *token2 = strtok(NULL, " ");
+            
+            if(strcmp (token2, "sequential") == 0){
+                token2 = strtok(NULL, " ");
+
+                while(token2 != NULL){
+                    executar_tarefa(token2);
+                    token2 = strtok(NULL, " ");
+                }
+
+            }else if(strcmp (token2, "parallel") == 0){
+                pid_t *idfilho = malloc(sizeof(pid_t));
+
+                char *tokenP;
+                tokenP = strtok(NULL, " ");
+
+                int contador = 0;
+
+                while(tokenP != NULL){
+                    idfilho = realloc(idfilho, sizeof(pid_t) * (contador+1));
+                    idfilho[contador] = executar_tarefa_parallel(tokenP);
+
+                    contador++;
+
+                    tokenP = strtok(NULL, " ");
+                }
+
+                int i=0;
+                while(i != contador){
+                    waitpid(idfilho[i], NULL, 0);
+
+                    i++;
+                }
+
+            }else{
+                token2[strcspn(token2, "\n")] = '\0';
+                executar_tarefa(token2);
+
+            }
 
         }else if ((strcmp (token1, "exit") == 0)){
             break;

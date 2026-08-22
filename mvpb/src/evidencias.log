@@ -190,4 +190,142 @@ Processflow> task algo /bin/echo tanto t faz
 Processflow> run algo
 tanto faz
 
-Pr
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+/bin/ls: invalid option -- '
+'
+Try '/bin/ls --help' for more information.
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+total 28
+-rw-r--r-- 1 marcus marcus  2804 Aug 22 13:36 Programa.c
+-rw-r--r-- 1 marcus marcus 20480 Aug 22 13:35 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 22 13:37 output
+Processflow> run nada
+Tarefa não encontrada
+Processflow> task oi /bin/al  echo cara namoral
+Processflow> run oi
+cara namoral
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mgit status[27mgit status
+[?2004lOn branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m../[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git add. .[C
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git commit 1° rubrica de codigo, Exe[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@a[C[C[C[C[Ccução[K[Kão sim[K[K[K[K[K[K[Kcao simples +e[K exit[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@-[C[1@1[1P[1@m[1@ [1@"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"
+[?2004l[main (root-commit) 7e0ad08] 1 rubrica, Execucao simples + exit
+ 3 files changed, 317 insertions(+)
+ create mode 100644 mvpb/src/Programa.c
+ create mode 100644 mvpb/src/evidencias.log
+ create mode 100755 mvpb/src/output/Programa
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git remote add [7mhttps://github.com/MarcusBarbosa-web/Implementacao-1[27m[7m-[27m[7mProcessos.git[27m[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cohttps://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crhttps://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cihttps://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cghttps://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cihttps://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnhttps://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lerror: remote origin already exists.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mgit push -u origin main[27mgit push -u origin main
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 30.65 KiB | 697.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git push -u origin mainremote add origin https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[17Pcommit -m "1 rubrica, Execucao simples + exit"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cremote add origin https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[Cpush -u origin main[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgit push -u origin mainremote add origin https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[17Pcommit -m "1 rubrica, Execucao simples + exit"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kstatus./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin mainremote add origin https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [C[C[C[C[17Pcommit -m "1 rubrica, Execucao simples + exit"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kstatus./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task t1 /bin/sleep 3
+Processflow> task t1 /bin/sleep 3^[[D     3              3 /bin/sleep 3
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[01m[KPrograma.c:[m[K In function ‘[01m[Kexecutar_tarefa_parallel[m[K’:
+[01m[KPrograma.c:98:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with no value, in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   98 |         [01;35m[Kreturn[m[K;
+      |         [01;35m[K^~~~~~[m[K
+[01m[KPrograma.c:93:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   93 | pid_t [01;36m[Kexecutar_tarefa_parallel[m[K(char *nome){
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> /bin/sleep 3            task 1 2 1 /bin/sleep 3
+Processflow> task 2 /bin/sleep 3
+Processflow> task 3 /bin/sleep 3
+Processflow> run sequential t1 t2 t3
+Tarefa não encontrada
+Tarefa não encontrada
+Tarefa não encontrada
+Processflow> run sequential t1 t2 t3
+Tarefa não encontrada
+Tarefa não encontrada
+Tarefa não encontrada
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> taks  sk oi /bin/echo eai cara
+Processflow> run oi
+eai cara
+Processflow> task listar /bin/ls -  l -  a
+Processflow> run listar
+total 56
+drwxr-xr-x 3 marcus marcus  4096 Aug 22 11:37 .
+drwxr-xr-x 3 marcus marcus  4096 Aug 21 17:39 ..
+-rw-r--r-- 1 marcus marcus  4200 Aug 22 17:00 Programa.c
+-rw-r--r-- 1 marcus marcus 32768 Aug 22 17:00 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 22 17:04 output
+Processflow> task 1 1 /bin/sleep 3
+Processflow> task 2 /bin/sleep 3
+Processflow> task 3 /bin/sleep 3
+Processflow> run sequential t1 t2 t3
+Tarefa não encontrada
+Tarefa não encontrada
+Tarefa não encontrada
+Processflow> run sequential t1 t2 t3        1 2 3
+Processflow> ts ask 11 run sequential t1 t2 t3                       /bin/sleep 3
+Processflow> task 11  22 /bin/sleep 3
+Processflow> task 33 /bin/sleep 3
+Processflow> run parallel 11 22 33
+Processflow> run vazio
+Tarefa não encontrada
+Processflow> task pausei /bin/sleep 3 5
+Processflow> run pausei
+Processflow> task coisas /coisa/coisada/coisando/sla
+Segmentation fault (core dumped)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> run inexistencia
+Tarefa não encontrada
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mv
