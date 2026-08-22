@@ -1,0 +1,193 @@
+Script started on 2026-08-22 11:37:56-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ date
+[?2004lSat Aug 22 11:38:05 -03 2026
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ whoami
+[?2004lmarcus
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ v[Kv[Kpwd
+[?2004l/home/marcus/Implementacao-1-Processos/mvpb/src
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ pwdwhoami[2Pdate./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:38:21:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kchar **[m[K’ from incompatible pointer type ‘[01m[Kchar *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   38 |     tarefa->comando [01;35m[K=[m[K comando;
+      |                     [01;35m[K^[m[K
+[01m[KPrograma.c:17:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoken[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   17 |     char *[01;35m[Ktoken[m[K = strtok(linha, " ");
+      |           [01;35m[K^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[Kwhoami[2Pdate./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> Processflow> run listar
+Essa função não existeProcessflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:38:21:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kchar **[m[K’ from incompatible pointer type ‘[01m[Kchar *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   38 |     tarefa->comando [01;35m[K=[m[K comando;
+      |                     [01;35m[K^[m[K
+[01m[KPrograma.c:17:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoken[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   17 |     char *[01;35m[Ktoken[m[K = strtok(linha, " ");
+      |           [01;35m[K^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004l
+Processflow> task listar /bin/ls -l
+
+Processflow> Processflow> run listar
+Essa função não existe
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:38:21:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kchar **[m[K’ from incompatible pointer type ‘[01m[Kchar *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   38 |     tarefa->comando [01;35m[K=[m[K comando;
+      |                     [01;35m[K^[m[K
+[01m[KPrograma.c:17:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoken[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   17 |     char *[01;35m[Ktoken[m[K = strtok(linha, " ");
+      |           [01;35m[K^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> Processflow> run listar
+Essa função não existe
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:37:21:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kchar **[m[K’ from incompatible pointer type ‘[01m[Kchar *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   37 |     tarefa->comando [01;35m[K=[m[K comando;
+      |                     [01;35m[K^[m[K
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:38:21:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kchar **[m[K’ from incompatible pointer type ‘[01m[Kchar *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   38 |     tarefa->comando [01;35m[K=[m[K comando;
+      |                     [01;35m[K^[m[K
+[01m[KPrograma.c:17:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoken[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   17 |     char *[01;35m[Ktoken[m[K = strtok(linha, " ");
+      |           [01;35m[K^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:17:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoken[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   17 |     char *[01;35m[Ktoken[m[K = strtok(linha, " ");
+      |           [01;35m[K^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:17:18:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kchar[m[K’ from ‘[01m[Kchar *[m[K’ makes integer from pointer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   17 |     char token = [01;35m[Kstrtok[m[K(linha, " ");
+      |                  [01;35m[K^~~~~~[m[K
+[01m[KPrograma.c:17:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktoken[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   17 |     char [01;35m[Ktoken[m[K = strtok(linha, " ");
+      |          [01;35m[K^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> Processflow> run listar^[[D^[[D         r^[[D^[[D                               run listarchar *token = strtok(linha, " ");                                 
+Segmentation fault (core dumped)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[KPrograma.c:98:22:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K[[m[K’ in format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   98 |             printf("%[01;35m[K[[m[Ks]\n", nome);
+      |                      [01;35m[K^[m[K
+[01m[KPrograma.c:98:20:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+   98 |             printf([01;35m[K"%[s]\n"[m[K, nome);
+      |                    [01;35m[K^~~~~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+[listar
+]
+Segmentation fault (core dumped)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+Segmentation fault (core dumped)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Segmentation fault (core dumped)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Segmentation fault (core dumped)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:17:29:[m[K [01;31m[Kerror: [m[K‘[01m[Knome[m[K’ undeclared (first use in this function); did you mean ‘[01m[Knode[m[K’?
+   17 |     printf("nome = [%s]\n", [01;31m[Knome[m[K);
+      |                             [01;31m[K^~~~[m[K
+      |                             [32m[Knode[m[K
+[01m[KPrograma.c:17:29:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Segmentation fault (core dumped)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+nome = [(null)]
+Segmentation fault (core dumped)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> runa  listar
+Programa.c  evidencias.log  output
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+Programa.c  evidencias.log  output
+Processflow> run naoexiste        ada
+Tarefa não encontrada
+Processflow> task saudacao /bin/echo Oi Marcus         eu to aqui^[[D                                 alguma cois      acoisa /bu in/echo algo alguem
+Processflow> run a saudacao        alguma  cp oisa
+alguem
+
+Processflow> sie  eila
+Essa função não existe
+Processflow> exit
+Essa função não existe
+Processflow> ^[[A    ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+Programa.c  evidencias.log  output
+Processflow> run vai zio
+Tarefa não encontrada
+Processflow> task algo /bin/echo tanto faz
+Processflow> run algo
+faz
+
+Processflow> exit
+Essa função não existe
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mgcc -Wall -Wextra -g3 Programa.c -o output/Programa[27mgcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:16:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+/bin/ls: invalid option -- '
+'
+Try '/bin/ls --help' for more information.
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+/bin/ls: invalid option -- '
+'
+Try '/bin/ls --help' for more information.
+Processflow> run vazio
+Tarefa não encontrada
+Processflow> task algo /bin/echo tanto t faz
+Processflow> run algo
+tanto faz
+
+Pr
