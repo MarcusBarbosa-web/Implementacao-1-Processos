@@ -118,6 +118,12 @@ void executar_tarefa(char *nome){
                 leitordearquivo = open(tarefa->arquivosai, O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
             }
+
+            if(leitordearquivo == -1){
+                printf("Erro ao tentar acessar o arquivo\n");
+                exit(1);
+            }
+
             dup2(leitordearquivo, 1);
             close(leitordearquivo);
 
@@ -126,6 +132,11 @@ void executar_tarefa(char *nome){
         int leitordearquivo;
         if(tarefa->arquivoentra != NULL){
             leitordearquivo = open(tarefa->arquivoentra, O_RDONLY);
+
+            if(leitordearquivo == -1){
+                printf("Erro ao tentar acessar o arquivo\n");
+                exit(1);
+            }
 
             dup2(leitordearquivo, 0);
             close(leitordearquivo);
@@ -165,6 +176,12 @@ pid_t executar_tarefa_parallel(char *nome){
                 leitordearquivo = open(tarefa->arquivosai, O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
             }
+
+            if(leitordearquivo == -1){
+                printf("Erro ao tentar acessar o arquivo\n");
+                exit(1);
+            }
+
             dup2(leitordearquivo, 1);
             close(leitordearquivo);
 
@@ -173,6 +190,11 @@ pid_t executar_tarefa_parallel(char *nome){
         int leitordearquivo;
         if(tarefa->arquivoentra != NULL){
             leitordearquivo = open(tarefa->arquivoentra, O_RDONLY);
+
+            if(leitordearquivo == -1){
+                printf("Erro ao tentar acessar o arquivo\n");
+                exit(1);
+            }
 
             dup2(leitordearquivo, 0);
             close(leitordearquivo);
@@ -229,6 +251,12 @@ void executar_JOB(char *nome){
                 leitordearquivo = open(tarefa->arquivosai, O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
             }
+
+            if(leitordearquivo == -1){
+                printf("Erro ao tentar acessar o arquivo\n");
+                exit(1);
+            }
+            
             dup2(leitordearquivo, 1);
             close(leitordearquivo);
 
@@ -237,6 +265,11 @@ void executar_JOB(char *nome){
         int leitordearquivo;
         if(tarefa->arquivoentra != NULL){
             leitordearquivo = open(tarefa->arquivoentra, O_RDONLY);
+
+            if(leitordearquivo == -1){
+                printf("Erro ao tentar acessar o arquivo\n");
+                exit(1);
+            }
 
             dup2(leitordearquivo, 0);
             close(leitordearquivo);
@@ -451,7 +484,7 @@ int main(int argc, char *argv[]){
                 }
 
             }else{
-                token2[strcspn(token2, "\n")] = '\0';
+                token2[strcspn(token2, "\r\n")] = '\0';
                 executar_tarefa(token2);
 
             }

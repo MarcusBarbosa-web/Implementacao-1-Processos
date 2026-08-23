@@ -582,4 +582,477 @@ exit
 [?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
 [01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
    34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
-      
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pf
+[?2004ltask listar /bin/ls -l
+run listar
+Tarefa não encontrada
+workdir /tmp
+Caminho não encontrado
+run listar
+Tarefa não encontrada
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa testando.pf
+[?2004ltask listar /bin/ls -l
+run listar
+Tarefa não encontrada
+workdir /tmp
+Caminho não encontrado
+run listar
+Tarefa não encontrada
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pf
+[?2004ltask listar /bin/ls -l
+run listar
+total 92
+-rw-r--r-- 1 marcus marcus 12109 Aug 23 16:59 Programa.c
+-rw-r--r-- 1 marcus marcus 69632 Aug 23 16:55 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 17:00 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+workdir /tmp
+run listar
+total 16
+-rw-r--r-- 1 marcus marcus    0 Aug 23 11:03 remote-wsl-loc.txt
+drwx------ 2 root   root   4096 Aug 23 10:58 snap-private-tmp
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-logind.service-25RQp9
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-resolved.service-ihaKzy
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-timesyncd.service-PyBMsw
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[C[C[C[8Poutput/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "5 rubrica, Background + jobs + wait"add .[K
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git add ../output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[C[C[C[8Poutput/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "5 rubrica, Background + jobs + wait"[1P[1@6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[7mworkflowFile + workdir[27m"workflowFile + workdir"
+[?2004l[main 85e5b29] 6 rubrica, workflowFile + workdir
+ 4 files changed, 184 insertions(+), 23 deletions(-)
+ create mode 100644 mvpb/src/testando.pf
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git commit -m "6 rubrica, workflowFile + workdir"add .[K./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[C[C[C[8Poutput/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin main
+[?2004lEnumerating objects: 16, done.
+Counting objects:   6% (1/16)Counting objects:  12% (2/16)Counting objects:  18% (3/16)Counting objects:  25% (4/16)Counting objects:  31% (5/16)Counting objects:  37% (6/16)Counting objects:  43% (7/16)Counting objects:  50% (8/16)Counting objects:  56% (9/16)Counting objects:  62% (10/16)Counting objects:  68% (11/16)Counting objects:  75% (12/16)Counting objects:  81% (13/16)Counting objects:  87% (14/16)Counting objects:  93% (15/16)Counting objects: 100% (16/16)Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  11% (1/9)Writing objects:  22% (2/9)Writing objects:  33% (3/9)Writing objects:  44% (4/9)Writing objects:  55% (5/9)Writing objects:  66% (6/9)Writing objects:  77% (7/9)Writing objects:  88% (8/9)Writing objects: 100% (9/9)Writing objects: 100% (9/9), 15.01 KiB | 2.14 MiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git
+   33e99e8..85e5b29  main -> main
+branch 'main' set up to track 'origin/main'.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git push -u origin maincommit -m "6 rubrica, workflowFile + workdir"add .[K./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "6 rubrica, workflowFile + workdir"add .[K./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pfgcc -Wall -Wextra -g3 Programa.c -o output/Programa[22P./output/Programa testando.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[C[C[C[8Poutput/Programa
+[?2004lProcessflow> processflow> task listar /bin/ls -l
+Essa função não existe
+Processflow> output listar /pasta_que_nao_existe/saida.txt^[[D                              a/saida.txt
+Tarefa nao existe
+Processflow> run listar
+Tarefa não encontrada
+Processflow> output listar /tmp/saida.txt
+Tarefa nao existe
+Processflow> run listar
+Tarefa não encontrada
+Processflow> task contar /usr/bin/wc -l
+Processflow> input contar /arquivo_que_nao_existe.txt                    o.txt
+Processflow> run contar
+task listar /bin/ls -l^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> output listar /pasta_que_nao_existe/saida.txt                        existe/        /saida.txt
+Processflow> run listar
+Erro ao tentar acessar o arquivo
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task contar /usr/bin/wc -l
+Processflow> input contar /arquivo_que_nao_existe.txt
+Processflow> run contar
+exit
+a exit
+2
+Processflow> runt    contar
+0
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> ^[[A^[[A        task contar /usr/bin/wc -l
+Processflow> input contar /arquivo_que_nao_existe.txt
+Processflow> run contar
+Erro ao tentar acessar o arquivo
+Processflow> [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mdate[27mdate
+[?2004lSun Aug 23 18:37:13 -03 2026
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mwhoami[27mwhoami
+[?2004lmarcus
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mpwd[27mpwd
+[?2004l/home/marcus/Implementacao-1-Processos/mvpb/src
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mtask listar /bin/ls -l[27mtask listar /bin/ls -l
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ task listar /bin/ls -lpwd[Kwhoami[3Ppwdwhoami[2Pdate./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[29Ptask listar /bin/ls -lpwd[Kwhoami[2Pdate./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+total 112
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 86016 Aug 23 18:37 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:37 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+Processflow> task contar /usr/bin/wc -l
+Processflow> run sequential listar contar
+total 112
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 86016 Aug 23 18:37 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:37 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+0
+Processflow> task esperaA /bin/sleep 2
+Processflow> task esperaB /bin/sleep 2
+Processflow> run parallel esperaA esperaB
+Processflow> task ordenar /usr/bin/sort
+Processflow> run pipe listar ordenar contar
+5
+Processflow> output listar /tmp/saida.txt
+Processflow> run listar
+Processflow> cat /tmp/saida.txt
+Essa função não existe
+Processflow> append listar /tmp/saida.txt
+Processflow> run listar
+Processflow> cat /tmp/saida.txt
+Essa função não existe
+Processflow> task contar /usr/bin/wc -l
+Processflow> input contar /tmp/saida.txt
+Processflow> run contar
+10
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [K]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [K]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [H[2J]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mscript -a evidencias.log[27mscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mdate[27mdate
+[?2004lSun Aug 23 18:44:32 -03 2026
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mwhoami[27mwhoami
+[?2004lmarcus
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mpwd[27mpwd
+[?2004l/home/marcus/Implementacao-1-Processos/mvpb/src
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ 
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ pwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"[8Ppush -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[Kwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programa
+[?2004lProcessflow> 
+Processflow> task listar /bin/ls -l
+Processflow> run listar
+tScript started on 2026-08-23 18:44:29-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="166" LINES="44"]
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mdate[27mdate
+[?2004lSun Aug 23 18:44:32 -03 2026
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mwhoami[27mwhoami
+[?2004lmarcus
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mpwd[27mpwd
+[?2004l/home/marcus/Implementacao-1-Processos/mvpb/src
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ 
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ pwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"[8Ppush -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[Kwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programa
+[?2004lProcessflow> 
+Processflow> task listar /bin/ls -l
+Processflow> run listar
+total 112
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 86016 Aug 23 18:37 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+Processflow> task contar /usr/bin/wc -l
+Processflow> run sequential listar contar
+total 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+0
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+total 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+Processflow> task contar /usr/bin/wc -l
+Processflow> run sequential listar contar
+total 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+0
+Processflow> 
+Processflow> task esperaA /bin/sleep 2
+Processflow> task esperaB /bin/sleep 2
+Processflow> run parallel esperaA esperaB
+Processflow> task ordenar /usr/bin/sort
+Processflow> run pipe listar ordenar contar
+5
+Processflow> output listar /tmp/saida.txt
+Processflow> run listar
+Processflow> append listar /tmp/saida.txt
+Processflow> run listar
+Processflow> input contar /tmp/saida.txt
+Processflowotal 112
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 86016 Aug 23 18:37 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+Processflow> task contar /usr/bin/wc -l
+Processflow> run sequential listar contar
+total 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+0
+Processflow> ^C
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> run listar
+total 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+Processflow> task contar /usr/bin/wc -l
+Processflow> run sequential listar contar
+total 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+0
+Processflow> 
+Processflow> task esperaA /bin/sleep 2
+Processflow> task esperaB /bin/sleep 2
+Processflow> run parallel esperaA esperaB
+Processflow> task ordenar /usr/bin/sort
+Processflow> run pipe listar ordenar contar
+5
+Processflow> output listar /tmp/saida.txt
+Processflow> run listar
+Processflow> append listar /tmp/saida.txt
+Processflow> run listar
+Processflow> input contar /tmp/saida.txt
+Processflow> run contar
+10
+Processflow> workdir /tmp
+Processflow> task pwd_ /bin/pwd
+Processflow> run pwd_
+/tmp
+Processflow> task espera /bin/sleep 3
+Processflow> start espera
+[1] 3830
+Processflow> jobs
+[1] 3830
+Processflow> wait 1
+Processflow> run tarefa_inexistente
+Tarefa não encontrada
+Processflow> task ruim /caminho/que/nao/existe
+Processflow> run ruim
+Erro no filho
+Processflow> output listar /pasta_que_nao_existe/saida.txt
+Processflow> run listar
+Erro ao tentar acessar o arquivo
+Processflow> input contar /arquivo_que_nao_existe.txt
+Processflow> run contar
+Erro ao tentar acessar o arquivo
+Processflow> wait 999
+Job não encontrado
+Processflow> workdir /pasta_que_nao_existe
+Caminho não encontrado
+Processflow> task    listar2    /bin/ls   -l
+Processflow> run listar2
+total 24
+-rw-r--r-- 1 marcus marcus    0 Aug 23 11:03 remote-wsl-loc.txt
+-rw-r--r-- 1 marcus marcus  478 Aug 23 18:47 saida.txt
+drwx------ 2 root   root   4096 Aug 23 10:58 snap-private-tmp
+drwx------ 3 root   root   4096 Aug 23 18:14 systemd-private-b9e497f34638447c80ce4b9d0b03d079-polkit.service-tfB19x
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-logind.service-25RQp9
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-resolved.service-ihaKzy
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-timesyncd.service-PyBMsw
+Processflow> 
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mcat /tmp/saida.txt[27mcat /tmp/saida.txt
+[?2004ltotal 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+total 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Proce> run contar
+10
+Processflow> workdir /tmp
+Processflow> task pwd_ /bin/pwd
+Processflow> run pwd_
+/tmp
+Processflow> task espera /bin/sleep 3
+Processflow> start espera
+[1] 3830
+Processflow> jobs
+[1] 3830
+Processflow> wait 1
+Processflow> run tarefa_inexistente
+Tarefa não encontrada
+Processflow> task ruim /caminho/que/nao/existe
+Processflow> run ruim
+Erro no filho
+Processflow> output listar /pasta_que_nao_existe/saida.txt
+Processflow> run listar
+Erro ao tentar acessar o arquivo
+Processflow> input contar /arquivo_que_nao_existe.txt
+Processflow> run contar
+Erro ao tentar acessar o arquivo
+Processflow> wait 999
+Job não encontrado
+Processflow> workdir /pasta_que_nao_existe
+Caminho não encontrado
+Processflow> task    listar2    /bin/ls   -l
+Processflow> run listar2
+total 24
+-rw-r--r-- 1 marcus marcus    0 Aug 23 11:03 remote-wsl-loc.txt
+-rw-r--r-- 1 marcus marcus  478 Aug 23 18:47 saida.txt
+drwx------ 2 root   root   4096 Aug 23 10:58 snap-private-tmp
+drwx------ 3 root   root   4096 Aug 23 18:14 systemd-private-b9e497f34638447c80ce4b9d0b03d079-polkit.service-tfB19x
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-logind.service-25RQp9
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-resolved.service-ihaKzy
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-timesyncd.service-PyBMsw
+Processflow> 
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mcat /tmp/saida.txt[27mcat /tmp/saida.txt
+[?2004ltotal 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+total 116
+-rw-r--r-- 1 marcus marcus 13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 90112 Aug 23 18:45 evidencias.log
+drwxr-xr-x 2 marcus marcus  4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus    66 Aug 23 16:55 testando.pf
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mprintf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.pf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pprintf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.p[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat /tmp/saida.txt[1P./output/Programa
+[?2004lProcessflow> printf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.pf
+Essa função não existe
+Processflow> cat teste.pf
+Essa função não existe
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mprintf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.pf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprintf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.pf
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mcat teste.pf[27mcat teste.pf
+[?2004ltask listar /bin/ls -l
+run listar
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./processflow teste.pf[27m./processflow teste.pf
+[?2004lbash: ./processflow: No such file or directory
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa teste.pf[27m./output/Programa teste.pf
+[?2004ltask listar /bin/ls -l
+run listar
+total 132
+-rw-r--r-- 1 marcus marcus  13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 102400 Aug 23 18:50 evidencias.log
+drwxr-xr-x 2 marcus marcus   4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus     66 Aug 23 16:55 testando.pf
+-rw-r--r-- 1 marcus marcus     39 Aug 23 18:50 teste.pf
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ exit[K[K[K[K./output/Programa teste.pf[7m./processflow arquivo_inexistente.pf[27m[1P./processflow arquivo_inexistente.p[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./processflow arquivo_inexistente.pf[27m./processflow arquivo_inexistente.pf
+[?2004lbash: ./processflow: No such file or directory
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./processflow arg1 arg2[27m./processflow arg1 arg2
+[?2004lbash: ./processflow: No such file or directory
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./processflow[27m./processflow
+[?2004lbash: ./processflow: No such file or directory
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [?2004l
+exit
+
+Script done on 2026-08-23 18:53:34-03:00 [COMMAND_EXIT_CODE="127"]
+ssos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mprintf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.pf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pprintf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.p[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat /tmp/saida.txt[1P./output/Programa
+[?2004lProcessflow> printf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.pf
+Essa função não existe
+Processflow> cat teste.pf
+Essa função não existe
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mprintf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.pf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprintf 'task listar /bin/ls -l\nrun listar\nexit\n' > teste.pf
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mcat teste.pf[27mcat teste.pf
+[?2004ltask listar /bin/ls -l
+run listar
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./processflow teste.pf[27m./processflow teste.pf
+[?2004lbash: ./processflow: No such file or directory
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa teste.pf[27m./output/Programa teste.pf
+[?2004ltask listar /bin/ls -l
+run listar
+total 132
+-rw-r--r-- 1 marcus marcus  13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 102400 Aug 23 18:50 evidencias.log
+drwxr-xr-x 2 marcus marcus   4096 Aug 23 18:45 output
+-rw-r--r-- 1 marcus marcus     66 Aug 23 16:55 testando.pf
+-rw-r--r-- 1 marcus marcus     39 Aug 23 18:50 teste.pf
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ exit[K[K[K[K./output/Programa teste.pf[7m./processflow arquivo_inexistente.pf[27m[1P./processflow arquivo_inexistente.p[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./processflow arquivo_inexistente.pf[27m./processflow arquivo_inexistente.pf
+[?2004lbash: ./processflow: No such file or directory
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./processflow arg1 arg2[27m./processflow arg1 arg2
+[?2004lbash: ./processflow: No such file or directory
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./processflow[27m./processflow
+[?2004lbash: ./processflow: No such file or directory
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [?2004l
+exit
+Script done.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ script -a evidencias.log[7P./output/Programa
+[?2004lProcessflow> [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa arquivo_inexistente.pf[27m./output/Programa arquivo_inexistente.pf
+[?2004lArquivo inexistente
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa arg1 arg2 arg3[27m./output/Programa arg1 arg2 arg3
+[?2004lExecução falhou
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kscript -a evidencias.log[7P./output/Programascript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[10Pcat[C[C[C[C[C[C[C[C[C[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat teste.pf[K[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[Kwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"[8Ppush -u origin maindate[K
+[?2004lSun Aug 23 18:56:30 -03 2026
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ date./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[10Pcat[C[C[C[C[C[C[C[C[C[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[Kwhoami
+[?2004lmarcus
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ whoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[10Pcat[C[C[C[C[C[C[C[C[C[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CScript started on 2026-08-23 18:56:21-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="166" LINES="44"]
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[10Pcat[C[C[C[C[C[C[C[C[C[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat teste.pf[K[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[Kwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"[8Ppush -u origin maindate[K
+[?2004lSun Aug 23 18:56:30 -03 2026
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ date./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[10Pcat[C[C[C[C[C[C[C[C[C[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[Kwhoami
+[?2004lmarcus
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ whoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[10Pcat[C[C[C[C[C[C[C[C[C[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[K
+[?2004l/home/marcus/Implementacao-1-Processos/mvpb/src
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ pwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[4@output/Programa[C[C[C[C[C[C[C[C[Cprocessflow arquivo_inexistente.pf[13Pg1 arg2[Kdate[Kwhoami[3Ppwd[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K
