@@ -167,7 +167,7 @@ pid_t executar_tarefa_parallel(char *nome){
 
         execvp(tarefa->caminho, tarefa->comando);
 
-        printf("Erro no filho");
+        printf("Erro no filho\n");
         exit(1);
     }
 
@@ -250,6 +250,70 @@ int main(){
                     waitpid(idfilho[i], NULL, 0);
 
                     i++;
+                }
+
+            }else if(strcmp (token2, "pipe") == 0){
+                char **cano = malloc(sizeof(char*));
+
+                char *tokenpipe;
+                tokenpipe = strtok(NULL, " ");
+
+                int contador = 0;
+
+                while(tokenpipe != NULL){
+                    cano = realloc(cano, sizeof(char*) * (contador+1));
+                    cano[contador] = strdup(tokenpipe);
+
+                    contador++;
+
+                    tokenpipe = strtok(NULL, " ");
+                }
+
+
+                int **canos = malloc(sizeof(int*) * (contador - 1));
+
+                for(int i = 0; i < contador - 1; i++){
+                    canos[i] = malloc(sizeof(int) * 2);
+                    pipe(canos[i]);
+
+                }
+
+                pid_t *idpipe = malloc(sizeof(pid_t) * contador);
+
+                for (int i=0; i < contador; i++){
+                    node *tarefa = procurar_tarefa(cano[i]);
+                    idpipe[i] = fork();
+
+                    if(idpipe[i] == 0){
+                        
+                        if(i > 0){
+                            dup2(canos[i-1][0], 0);
+                        }
+
+                        if(i < contador - 1){
+                            dup2(canos[i][1], 1);
+                        }
+
+                        for(int j = 0; j < contador - 1; j++){
+                            close(canos[j][0]);
+                            close(canos[j][1]);
+                        }
+
+                        execvp(tarefa->caminho, tarefa->comando);
+
+                        printf("Erro no filho\n");
+                        exit(1);
+                    }
+                }
+
+                for(int i = 0; i < contador - 1; i++){
+                    close(canos[i][0]);
+                    close(canos[i][1]);
+
+                }
+
+                for(int i = 0; i < contador; i++){
+                    waitpid(idpipe[i], NULL, 0);
                 }
 
             }else{
