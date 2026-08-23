@@ -413,4 +413,61 @@ remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[K
 To https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git
    d4706d7..8c280bd  main -> main
 branch 'main' set up to track 'origin/main'.
-[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git push -u origin maincommit -m "3 rubrica, Redirecionamento"
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git push -u origin maincommit -m "3 rubrica, Redirecionamento"add .[Kcat saida.txt./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:21:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   21 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[01m[KPrograma.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[KPrograma.c:309:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ undeclared (first use in this function)
+  309 |                 for(int i = 0; [01;31m[Kj[m[K < contador - 1; i++){
+      |                                [01;31m[K^[m[K
+[01m[KPrograma.c:309:32:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:21:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   21 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "3 rubrica, Redirecionamento"add .[Kcat saida.txt./output/Programa
+[?2004lProcessflow> task listar /bin/ls
+Processflow> task ordenar /usr/bin/sort
+Processflow> task contar /usr/bin/wc -l
+Processflow> run pipe listar ordenar contar
+3
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "3 rubrica, Redirecionamento"add .[Kcat saida.txt[4Pgit add .
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git add ../output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "3 rubrica, Redirecionamento"[C[1P[1@4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"P"i"p"e"
+[?2004l[main 600d368] 4 rubrica, Pipe
+ 3 files changed, 87 insertions(+), 2 deletions(-)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git commit -m "4 rubrica, Pipe"add .[K./output/Programa[8Pgit add .commit -m "4 rubrica, Pipe"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[28PScript started on 2026-08-23 11:17:17-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git push -u origin maincommit -m "4 rubrica, Pipe"[8Ppush -u origin main[Kgit push -u origin maincommit -m "4 rubrica, Pipe"[8Ppush -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programa
+[?2004lProcessflow> task pausa /bin/sleep 5
+Processflow> start pausa
+[1] 1621
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[01m[KPrograma.c:[m[K In function ‘[01m[Kprocurar_IDJOB[m[K’:
+[01m[KPrograma.c:277:17:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Knode *[m[K’ from incompatible pointer type ‘[01m[Kjob *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  277 |     node *aux = [01;35m[Klista_de_jobs[m[K;
+      |                 [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[KPrograma.c:280:15:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ has no member named ‘[01m[Kid[m[K’
+  280 |        if (aux[01;31m[K->[m[Kid == id){
+      |               [01;31m[K^~[m[K
+[01m[KPrograma.c:281:16:[m[K [01;35m[Kwarning: [m[Kreturning ‘[01m[Knode *[m[K’ from a function with incompatible return type ‘[01m[Kjob *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  281 |         return [01;35m[Kaux[m[K;
+      |                [01;35m[K^~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32m

@@ -18,6 +18,19 @@ typedef struct node{
 
 node *lista_tarefas = NULL;
 
+typedef struct job{
+    int id;
+    pid_t pid;
+    struct job *next;
+}job;
+
+job *lista_de_jobs = NULL;
+int proxID = 1;
+
+
+
+
+
 node* criar_tarefa(char *linha){
 
     char *nome = strtok(NULL, " ");
@@ -196,8 +209,95 @@ void procurar_arquivo(char *nome, char *tipo, char *arquivo){
 
 }
 
+void executar_JOB(char *nome){
+    node *tarefa = procurar_tarefa(nome);
 
+    if (tarefa == NULL){
+        printf("Tarefa não encontrada\n");
+        return;
+    }
 
+    pid_t fok = fork();
+    if(fok == 0){
+        if(tarefa->arquivosai != NULL){
+            int leitordearquivo;
+
+            if(tarefa->appendar == 1){
+                leitordearquivo = open(tarefa->arquivosai, O_WRONLY | O_CREAT | O_APPEND, 0644);
+
+            }else{
+                leitordearquivo = open(tarefa->arquivosai, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+
+            }
+            dup2(leitordearquivo, 1);
+            close(leitordearquivo);
+
+        }
+
+        int leitordearquivo;
+        if(tarefa->arquivoentra != NULL){
+            leitordearquivo = open(tarefa->arquivoentra, O_RDONLY);
+
+            dup2(leitordearquivo, 0);
+            close(leitordearquivo);
+        }
+
+        execvp(tarefa->caminho, tarefa->comando);
+
+        printf("Erro no filho\n");
+        exit(1);
+
+    }else if(fok > 0){
+        job *novojob = malloc(sizeof(job));
+        
+        novojob->id = proxID;
+        novojob->pid = fok;
+        novojob->next = lista_de_jobs;
+
+        lista_de_jobs = novojob;
+
+        printf("[%d] %d\n", novojob->id, novojob->pid);
+
+        proxID++;
+    }
+}
+
+void procurar_JOB(){
+    job *aux = lista_de_jobs;
+
+    while(aux != NULL){
+       printf("[%d] %d\n", aux->id, aux->pid);
+    
+        aux = aux->next;
+    }
+}
+
+job *procurar_IDJOB(int id){
+
+    job *aux = lista_de_jobs;
+
+    while(aux != NULL){
+       if (aux->id == id){
+        return aux;
+       }
+
+       aux = aux->next;
+    }
+    return NULL;
+}
+
+void wait_job(int id){
+    job *novojob = procurar_IDJOB(id);
+
+    if(novojob == NULL){
+        printf("Job não encontrado\n");
+        return;
+    }
+
+    waitpid(novojob->pid, NULL, 0);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 int main(){
@@ -327,6 +427,21 @@ int main(){
             char *arquivo = strtok(NULL, " ");
 
             procurar_arquivo(nome, token1, arquivo);
+
+        }else if(strcmp(token1, "start") == 0){
+            char *nome = strtok(NULL, " ");
+
+            executar_JOB(nome);
+        
+        }else if(strcmp(token1, "jobs") == 0){
+            procurar_JOB();
+
+        }else if(strcmp(token1, "wait") == 0){
+            char *idjob = strtok(NULL, " ");
+
+            int id = atoi(idjob);
+
+            wait_job(id);
 
         }else if ((strcmp (token1, "exit") == 0)){
             break;
