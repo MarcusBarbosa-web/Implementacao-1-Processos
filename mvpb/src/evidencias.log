@@ -470,4 +470,116 @@ Processflow> exit
 [01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
    34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
       |                    [01;35m[K~~~~~~^~~~~[m[K
-[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32m
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task pausa /bin/sleep 8
+Processflow> start pausa
+[1] 2067
+Processflow> jobs
+[1] 2067
+Processflow> wait 1
+Processflow> d wait 1
+Processflow> wait 1
+Processflow> task pausa /bin/sleep 15
+Processflow> start pausa
+[2] 2069
+Processflow> wait 1
+Processflow> s saas    task pausa /bin/sleep 15
+Processflow> start pausa
+[3] 2070
+Processflow> wait 1
+Processflow> time ./output/Programa
+Essa função não existe
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mtime ./output/Programa[27mtime ./output/Programa
+[?2004lProcessflow> task pausa /bin/sleep 15
+Processflow> start pausa
+[1] 2073
+Processflow> wait 1
+ex  Processflow> exit
+
+real	0m30.979s
+user	0m0.003s
+sys	0m0.003s
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ time ./output/Programa[5P./output/Programa
+[?2004lProcessflow> task pausa /bin/sleep 15
+Processflow> task      start pausa
+[1] 2075
+Processflow> wait 1
+Processflow> ^[[A^[[A        exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programatime ./output/Programa[5P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programatime ./output/Programa[5P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programa[8Pgit add .
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git add ../output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programatime ./output/Programa[5P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "4 rubrica, Pipe"add .[Kcommit -m "4 rubrica, Pipe"[C[1P"[1P"[1P"[1P"[1P[1@5[C[C[C[C[C[C[C[C[C[C[7mBackground + jobs + wait[27m"Background + jobs + wait"
+[?2004l[main 33e99e8] 5 rubrica, Background + jobs + wait
+ 3 files changed, 173 insertions(+), 1 deletion(-)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git commit -m "5 rubrica, Background + jobs + wait"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programatime ./output/Programa[5P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin main
+[?2004lEnumerating objects: 15, done.
+Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 14.87 KiB | 1.86 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git
+   600d368..33e99e8  main -> main
+branch 'main' set up to track 'origin/main'.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git push -u origin maincommit -m "5 rubrica, Background + jobs + wait"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa[8Pgit add .commit -m "5 rubrica, Background + jobs + wait"[28Ppush -u origin main[Kgit push -u origin maincommit -m "5 rubrica, Background + jobs + wait"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programatime ./output/Programa[5P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[28Pit push -u origin maincommit -m "5 rubrica, Background + jobs + wait"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[34P./output/Programa
+[?2004lProcessflow> task listar /bin/pwd
+Processflow> run listar
+/home/marcus/Implementacao-1-Processos/mvpb/src
+Processflow> workdir /tmp
+Processflow> run listar
+/tmp
+Processflow> exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7mcat > teste.pf << 'EOF'[27m
+[7mtask listar /bin/ls -l[27m
+[7mrun listar[27m
+[7mworkdir /tmp[27m
+[7mrun listar[27m
+[7mexit[27m
+[7mEOF[27m[A[A[A[A[A[A]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ cat > teste.pf << 'EOF'
+task listar /bin/ls -l
+run listar
+workdir /tmp
+run listar
+exit
+[1PEO[K[K[K[A[C[C[C[C[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./processflow teste.pf[27m./processflow teste.pf[C[1P.pfa.pfn.pfd.pfo.pf
+[?2004lbash: ./processflow: No such file or directory
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa testando.pf[27m./output/Programa testando.pf
+[?2004lcat > testando.pf << 'EOF'
+Essa função não existe
+task listar /bin/ls -l
+run listar
+Tarefa não encontrada
+workdir /tmp
+Caminho não encontrado
+run listar
+Tarefa não encontrada
+exit
+Essa função não existe
+EOF
+Essa função não existe
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa testando.pf[27m./output/Programa testando.pf
+[?2004ltask listar /bin/ls -l
+run listar
+Tarefa não encontrada
+workdir /tmp
+Caminho não encontrado
+run listar
+Tarefa não encontrada
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa testando.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[C[C[C[8Poutput/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      

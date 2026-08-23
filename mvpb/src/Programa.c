@@ -60,7 +60,7 @@ node* criar_tarefa(char *linha){
         contador++;
 
         comando = strtok(NULL, " ");
-        if (comando != NULL) {
+        if(comando != NULL) {
             copcomando = strdup(comando);
 
         }else{
@@ -88,7 +88,7 @@ node *procurar_tarefa(char *nome){
     node *aux = lista_tarefas;
 
     while(aux != NULL){
-       if (strcmp(aux->nome, nome) == 0){
+       if(strcmp(aux->nome, nome) == 0){
         return aux;
        }
 
@@ -100,7 +100,7 @@ node *procurar_tarefa(char *nome){
 void executar_tarefa(char *nome){
     node *tarefa = procurar_tarefa(nome);
 
-    if (tarefa == NULL){
+    if(tarefa == NULL){
         printf("Tarefa não encontrada\n");
         return;
     }
@@ -147,7 +147,7 @@ void executar_tarefa(char *nome){
 pid_t executar_tarefa_parallel(char *nome){
     node *tarefa = procurar_tarefa(nome);
 
-    if (tarefa == NULL){
+    if(tarefa == NULL){
         printf("Tarefa não encontrada\n");
         return -1;
     }
@@ -190,12 +190,12 @@ pid_t executar_tarefa_parallel(char *nome){
 void procurar_arquivo(char *nome, char *tipo, char *arquivo){
     node *tarefa = procurar_tarefa(nome);
     
-    if (tarefa == NULL){
+    if(tarefa == NULL){
         printf("Tarefa nao existe\n");
         return;
     }
     
-    if (strcmp (tipo, "input") == 0){
+    if(strcmp (tipo, "input") == 0){
         tarefa->arquivoentra = strdup(arquivo);
 
     }else if (strcmp (tipo, "output") == 0){
@@ -212,7 +212,7 @@ void procurar_arquivo(char *nome, char *tipo, char *arquivo){
 void executar_JOB(char *nome){
     node *tarefa = procurar_tarefa(nome);
 
-    if (tarefa == NULL){
+    if(tarefa == NULL){
         printf("Tarefa não encontrada\n");
         return;
     }
@@ -247,7 +247,7 @@ void executar_JOB(char *nome){
         printf("Erro no filho\n");
         exit(1);
 
-    }else if(fok > 0){
+    }else if (fok > 0){
         job *novojob = malloc(sizeof(job));
         
         novojob->id = proxID;
@@ -277,7 +277,7 @@ job *procurar_IDJOB(int id){
     job *aux = lista_de_jobs;
 
     while(aux != NULL){
-       if (aux->id == id){
+       if(aux->id == id){
         return aux;
        }
 
@@ -300,24 +300,58 @@ void wait_job(int id){
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-int main(){
+int main(int argc, char *argv[]){
+
+    if(argc > 2){
+        printf("Execução falhou\n");
+        return 1;
+    }
+
     char linha[3000];
 
-    do{
-        printf("Processflow> ");
+    FILE *entrada;
 
-        fgets(linha, sizeof(linha), stdin);
-        linha[strcspn(linha, "\n")] = '\0';
+    if(argc == 1){
+        entrada = stdin;
+
+    }else{
+        entrada = fopen(argv[1], "r");
+
+        if(entrada == NULL){
+            printf("Arquivo inexistente\n");
+            return 1;
+        }
+    }
+
+    do{
+        if(argc == 1){
+            printf("Processflow> ");
+        }
+
+        if (fgets(linha, sizeof(linha), entrada) == NULL){
+            break;
+        }
+
+        linha[strcspn(linha, "\r\n")] = '\0';
+
+        if(argc > 1){
+            printf("%s\n", linha);
+        }
 
         char *token1 = strtok(linha, " ");
-        token1[strcspn(token1, "\n")] = '\0';
 
-        if ((strcmp (token1, "task") == 0)){
+        if(token1 == NULL){
+            continue;
+        }
+
+        token1[strcspn(token1, "\r\n")] = '\0';
+
+        if((strcmp (token1, "task") == 0)){
             node *tarefa = criar_tarefa(linha);
             tarefa->next = lista_tarefas;
             lista_tarefas = tarefa;
 
-        }else if((strcmp (token1, "run") == 0)){
+        }else if ((strcmp (token1, "run") == 0)){
             char *token2 = strtok(NULL, " ");
             
             if(strcmp (token2, "sequential") == 0){
@@ -328,7 +362,7 @@ int main(){
                     token2 = strtok(NULL, " ");
                 }
 
-            }else if(strcmp (token2, "parallel") == 0){
+            }else if (strcmp (token2, "parallel") == 0){
                 pid_t *idfilho = malloc(sizeof(pid_t));
 
                 char *tokenP;
@@ -352,7 +386,7 @@ int main(){
                     i++;
                 }
 
-            }else if(strcmp (token2, "pipe") == 0){
+            }else if (strcmp (token2, "pipe") == 0){
                 char **cano = malloc(sizeof(char*));
 
                 char *tokenpipe;
@@ -422,26 +456,33 @@ int main(){
 
             }
 
-        }else if(strcmp(token1, "input") == 0 || strcmp(token1, "output") == 0 || strcmp(token1, "append") == 0){
+        }else if (strcmp(token1, "input") == 0 || strcmp(token1, "output") == 0 || strcmp(token1, "append") == 0){
             char *nome = strtok(NULL, " ");
             char *arquivo = strtok(NULL, " ");
 
             procurar_arquivo(nome, token1, arquivo);
 
-        }else if(strcmp(token1, "start") == 0){
+        }else if (strcmp(token1, "start") == 0){
             char *nome = strtok(NULL, " ");
 
             executar_JOB(nome);
         
-        }else if(strcmp(token1, "jobs") == 0){
+        }else if (strcmp(token1, "jobs") == 0){
             procurar_JOB();
 
-        }else if(strcmp(token1, "wait") == 0){
+        }else if (strcmp(token1, "wait") == 0){
             char *idjob = strtok(NULL, " ");
 
             int id = atoi(idjob);
 
             wait_job(id);
+
+        }else if (strcmp(token1, "workdir") == 0){
+            char *nome = strtok(NULL, " ");
+
+            if(chdir(nome) == -1){
+                printf("Caminho não encontrado\n");
+            }
 
         }else if ((strcmp (token1, "exit") == 0)){
             break;
@@ -452,4 +493,7 @@ int main(){
 
     }while(1);
     
+    if(entrada != stdin){
+        fclose(entrada);
+    }
 }

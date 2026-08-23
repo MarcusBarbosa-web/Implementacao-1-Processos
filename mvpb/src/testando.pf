@@ -1,0 +1,5 @@
+task listar /bin/ls -l
+run listar
+workdir /tmp
+run listar
+exit
