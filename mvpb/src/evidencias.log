@@ -1055,4 +1055,246 @@ Processflow> [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[
 [?2004lmarcus
 [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ whoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[10Pcat[C[C[C[C[C[C[C[C[C[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[K
 [?2004l/home/marcus/Implementacao-1-Processos/mvpb/src
-[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ pwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[4@output/Programa[C[C[C[C[C[C[C[C[Cprocessflow arquivo_inexistente.pf[13Pg1 arg2[Kdate[Kwhoami[3Ppwd[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ pwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[4@output/Programa[C[C[C[C[C[C[C[C[Cprocessflow arquivo_inexistente.pf[13Pg1 arg2[Kdate[Kwhoami[3Ppwd[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programapwd[K
+[?2004l/home/marcus/Implementacao-1-Processos/mvpb/src
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ pwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[4@output/Programa[C[C[C[C[C[C[C[C[Cprocessflow arquivo_inexistente.pf[13Pg1 arg2[Kdate[Kwhoami[3Ppwd[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[4Pprocessflow[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[K
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa arquivo_inexistente.pf[27m./output/Programa arquivo_inexistente.pf
+[?2004lArquivo inexistente
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa arg1 arg2 arg3[27m./output/Programa arg1 arg2 arg3
+[?2004lExecução falhou
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa arg1 arg2 arg3quivo_inexistente.pf[8Pg1 arg2 arg3quivo_inexistente.pf[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpwdwhoami[2Pdatewhoami[3Ppwd[K./output/Programa[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programa[8Pgit add .
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git add ../output/Programa arg1 arg2 arg3[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[K
+[?2004lProcessflow> task listar /bin/ls -l
+Processflow> [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa
+[?2004lProcessflow> [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa arquivo_inexistente.pf[27m./output/Programa arquivo_inexistente.pf
+[?2004lArquivo inexistente
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [7m./output/Programa arg1 arg2 arg3[27m./output/Programa arg1 arg2 arg3
+[?2004lExecução falhou
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ ./output/Programa arg1 arg2 arg3quivo_inexistente.pf[8Pg1 arg2 arg3quivo_inexistente.pf[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpwdwhoami[2Pdatewhoami[3Ppwd[K./output/Programa[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programa[8Pgit add .
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git add ../output/Programa arg1 arg2 arg3quivo_inexistente.pf[8Pg1 arg2 arg3git add .[K./output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat teste.pf[K[K./output/Programa teste.pfprocessflow arquivo_inexistente.pf[13Pg1 arg2[Kdate[Kwhoami[3Ppwd[K./output/Programa arquivo_inexistente.pf[8Pg1 arg2 arg3git add .[K[Kgit add ../output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdaquivo_inexistente.pf[8Pg1 arg2 arg3git add .[K./output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat teste.pf[K[K./output/Programa teste.pfprocessflow arquivo_inexistente.pf[13Pg1 arg2[Kdate[Kwhoami[3Ppwd[K./output/Programa arquivo_inexistente.pf[8Pg1 arg2 arg3git add .[K[Kgit add ../output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflowdate[Kwhoami[3Ppwd[K./output/Programa arquivo_inexistente.pf[8Pg1 arg2 arg3git add .[K[Kgit add ../output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[Kcat /tmp/saida.txt[Kpwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"[1P[1@7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[7mErros + outras situações[27m"Erros + outras situações"
+[?2004l[main ef01f83] 7 rubrica, Erros + outras situações
+ 4 files changed, 508 insertions(+), 2 deletions(-)
+ rename mvpb/src/{testando.pf => exemplo.pf} (100%)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git commit -m "7 rubrica, Erros + outras situações"add .[K./output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[Kpwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"[8Ppush -u origin main
+[?2004lEnumerating objects: 15, done.
+Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
+Delta compression using upte./processflowdate[Kwhoami[3Ppwd[K./output/Programa arquivo_inexistente.pf[8Pg1 arg2 arg3git add .[K[Kgit add ../output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[Kcat /tmp/saida.txt[Kpwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"[1P[1@7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[7mErros + outras situações[27m"Erros + outras situações"
+[?2004l[main ef01f83] 7 rubrica, Erros + outras situações
+ 4 files changed, 508 insertions(+), 2 deletions(-)
+ rename mvpb/src/{testando.pf => exemplo.pf} (100%)
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ git commit -m "7 rubrica, Erros + outras situações"add .[K./output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[Kpwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"[8Ppush -u origin main
+[?2004lEnumerating objects: 15, done.
+Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 6.25 KiB | 1.25 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git
+   85e5b29..ef01f83  main -> main
+branch 'main' set up to track 'origin/main'.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [K]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcu to 8 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 6.25 KiB | 1.25 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/MarcusBarbosa-web/Implementacao-1-Processos.git
+   85e5b29..ef01f83  main -> main
+branch 'main' set up to track 'origin/main'.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [K]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [H[2J]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ cd
+[?2004l[?2004h]0;marcus@Antonio: ~[01;32mmarcus@Antonio[00m:[01;34m~[00m$ cd [7m~/Implementacao-1-Processos/mvpb[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~/Implementacao-1-Processos/mvpb
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean
+[?2004lrm -rf output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make
+[?2004lmake: *** No rule to make target 'Programa.c', needed by 'output/Programa'.  Stop.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test
+[?2004lmake: *** No rule to make target 'Programa.c', needed by 'output/Programa'.  Stop.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test[K cleancd ~/Implementacao-1-Processos/mvpb[Kgit push -u origin maincommit -m "7 rubrica, Erros + outras situações"add .[K./output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[Kpwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[Kcc1:[m[K [01;31m[Kfatal error: [m[KPrograma.c: No such file or directory
+compilation terminated.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clae[K[Kean
+[?2004lrm -rf output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make
+[?2004lmake: *** No rule to make target 'Programa.c', needed by 'output/Programa'.  Stop.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;3s@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ [H[2J]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ cd
+[?2004l[?2004h]0;marcus@Antonio: ~[01;32mmarcus@Antonio[00m:[01;34m~[00m$ cd [7m~/Implementacao-1-Processos/mvpb[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~/Implementacao-1-Processos/mvpb
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean
+[?2004lrm -rf output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make
+[?2004lmake: *** No rule to make target 'Programa.c', needed by 'output/Programa'.  Stop.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test
+[?2004lmake: *** No rule to make target 'Programa.c', needed by 'output/Programa'.  Stop.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test[K cleancd ~/Implementacao-1-Processos/mvpb[Kgit push -u origin maincommit -m "7 rubrica, Erros + outras situações"add .[K./output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[Kpwdwhoami[2Pdategit push -u origin maincommit -m "4 rubrica, Pipe"add .[K./output/Programagcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[Kcc1:[m[K [01;31m[Kfatal error: [m[KPrograma.c: No such file or directory
+compilation terminated.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clae[K[Kean
+[?2004lrm -rf output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make
+[?2004lmake: *** No rule to make target 'Programa.c', needed by 'output/Programa'.  Stop.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test
+[?2004lmake: *** No rule to make target 'Programa.c', needed by 'output/Programa'.  Stop.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test[K clean
+[?2004lrm -rf src/output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[1Ptest
+[?2004lmkdir -p src/output
+gcc -Wall -Wextra -g3 src/Programa.c -o src/output/Programa
+[01m[Ksrc/Programa.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[Ksrc/Programa.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+cd src && ./output/Programa exemplo.pf
+task listar /bin/ls -l
+run listar
+total 164
+-rw-r--r-- 1 marcus marcus  2mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test
+[?2004lmake: *** No rule to make target 'Programa.c', needed by 'output/Programa'.  Stop.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test[K clean
+[?2004lrm -rf src/output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[1Ptest
+[?2004lmkdir -p src/output
+gcc -Wall -Wextra -g3 src/Programa.c -o src/output/Programa
+[01m[Ksrc/Programa.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[Ksrc/Programa.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+cd src && ./output/Programa exemplo.pf
+task listar /bin/ls -l
+run listar
+total 164
+-rw-r--r-- 1 marcus marcus  13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 137300 Aug 23 21:27 evidencias.log
+-rw-r--r-- 1 marcus marcus     66 Aug 23 16:55 exemplo.pf
+drwxr-xr-x 2 marcus marcus   4096 Aug 23 21:29 output
+workdir /tmp
+run listar
+total 24
+-rw-r--r-- 1 marcus marcus    0 Aug 23 11:03 remote-wsl-loc.txt
+-rw-r--r-- 1 marcus marcus  478 Aug 23 18:47 saida.txt
+drwx------ 2 root   root   4096 Aug 23 10:58 snap-private-tmp
+drwx------ 3 root   root   4096 Aug 23 18:14 systemd-private-b9e497f34638447c80ce4b9d0b03d079-polkit.service-tfB19x
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-logind.service-25RQp9
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-resolved.service-ihaKzy
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-timesyncd.service-PyBMsw
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make testclean[1Ptestclean
+[?2004lrm -rf src/output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[1Ptestclean[1Ptest[K
+[?2004lmkdir -p src/output
+gcc -Wall -Wextra -g3 src/Programa.c -o src/output/Programa
+[01m[Ksrc/Programa.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[Ksrc/Programa.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean
+[?2004lrm -rf src/output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[K clean
+[?2004lrm -rf src/output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[K
+[?2004lmkdir -p src/output
+gcc -Wall -Wextra -g3 src/Programa.c -o src/output/Programa
+[01m[Ksrc/Programa.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[Ksrc/Programa.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Pro13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 137300 Aug 23 21:27 evidencias.log
+-rw-r--r-- 1 marcus marcus     66 Aug 23 16:55 exemplo.pf
+drwxr-xr-x 2 marcus marcus   4096 Aug 23 21:29 output
+workdir /tmp
+run listar
+total 24
+-rw-r--r-- 1 marcus marcus    0 Aug 23 11:03 remote-wsl-loc.txt
+-rw-r--r-- 1 marcus marcus  478 Aug 23 18:47 saida.txt
+drwx------ 2 root   root   4096 Aug 23 10:58 snap-private-tmp
+drwx------ 3 root   root   4096 Aug 23 18:14 systemd-private-b9e497f34638447c80ce4b9d0b03d079-polkit.service-tfB19x
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-logind.service-25RQp9
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-resolved.service-ihaKzy
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-timesyncd.service-PyBMsw
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make testclean[1Ptestclean
+[?2004lrm -rf src/output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[1Ptestclean[1Ptest[K
+[?2004lmkdir -p src/output
+gcc -Wall -Wextra -g3 src/Programa.c -o src/output/Programa
+[01m[Ksrc/Programa.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[Ksrc/Programa.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean
+[?2004lrm -rf src/output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[K clean
+[?2004lrm -rf src/output
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[K
+[?2004lmkdir -p src/output
+gcc -Wall -Wextra -g3 src/Programa.c -o src/output/Programa
+[01m[Ksrc/Programa.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[Ksrc/Programa.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[K clean[1Ptest
+[?2004lcd src && ./output/Programa exemplo.pf
+task listar /bin/ls -l
+run listar
+total 172
+-rw-r--r-- 1 marcus marcus  13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 145492 Aug 23 21:29 evidencias.log
+-rw-r--r-- 1 marcus marcus     66 Aug 23 16:55 exemplo.pf
+drwxr-xr-x 2 marcus marcus   4096 Aug 23 21:29 output
+workdir /tmp
+run listar
+total 24
+-rw-r--r-- 1 marcus marcus    0 Aug 23 11:03 remote-wsl-loc.txt
+-rw-r--r-- 1 marcus marcus  478 Aug 23 18:47 saida.txt
+drwx------ 2 root   root   4096 Aug 23 10:58 snap-private-tmp
+drwx------ 3 root   root   4096 Aug 23 18:14 systemd-private-b9e497f34638447c80ce4b9d0b03d079-polkit.service-tfB19x
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-logind.service-25RQp9
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-resolved.service-ihaKzy
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-timesyncessos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make clean[K clean[1Ptest
+[?2004lcd src && ./output/Programa exemplo.pf
+task listar /bin/ls -l
+run listar
+total 172
+-rw-r--r-- 1 marcus marcus  13005 Aug 23 18:33 Programa.c
+-rw-r--r-- 1 marcus marcus 145492 Aug 23 21:29 evidencias.log
+-rw-r--r-- 1 marcus marcus     66 Aug 23 16:55 exemplo.pf
+drwxr-xr-x 2 marcus marcus   4096 Aug 23 21:29 output
+workdir /tmp
+run listar
+total 24
+-rw-r--r-- 1 marcus marcus    0 Aug 23 11:03 remote-wsl-loc.txt
+-rw-r--r-- 1 marcus marcus  478 Aug 23 18:47 saida.txt
+drwx------ 2 root   root   4096 Aug 23 10:58 snap-private-tmp
+drwx------ 3 root   root   4096 Aug 23 18:14 systemd-private-b9e497f34638447c80ce4b9d0b03d079-polkit.service-tfB19x
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-logind.service-25RQp9
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-resolved.service-ihaKzy
+drwx------ 3 root   root   4096 Aug 23 10:58 systemd-private-b9e497f34638447c80ce4b9d0b03d079-systemd-timesyncd.service-PyBMsw
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test[K clean[K clean[1Ptestclean[1Ptest[K cleangcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[Kcc1:[m[K [01;31m[Kfatal error: [m[KPrograma.c: No such file or directory
+compilation terminated.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake test[K[K clean[K clean[1Ptestclean[1Ptest[K cleangcc -Wall -Wextra -g3 Programa.c -o output/Programa[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004lMakefile  README.md  [0m[01;34msrc[0m
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ cd [7m~/Implementacao-1-Processos/mvpb[27m~/Implementacao-1-Processos/mvpb/src
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ cd ~/Implementacao-1-Processos/mvpb/srcls[Kgcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[12Pcd ~/Implementacao-1-Processos/mvpb/srcls[Kgcc -Wall -Wextra -g3 Programa.c -o output/Programamake test[K[K clean[K clean[1Ptestclean[1Ptest[K cleangcc -Wall -Wextra -g3 Programa.c -o output/Programamake test[K[K cleancd ~/Implementacao-1-Processos/mvpb[Kgit push -u origin maincd.service-PyBMsw
+exit
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ make test[K clean[K clean[1Ptestclean[1Ptest[K cleangcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[Kcc1:[m[K [01;31m[Kfatal error: [m[KPrograma.c: No such file or directory
+compilation terminated.
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake test[K[K clean[K clean[1Ptestclean[1Ptest[K cleangcc -Wall -Wextra -g3 Programa.c -o output/Programa[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004lMakefile  README.md  [0m[01;34msrc[0m
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb[00m$ cd [7m~/Implementacao-1-Processos/mvpb[27m~/Implementacao-1-Processos/mvpb/src
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ cd ~/Implementacao-1-Processos/mvpb/srcls[Kgcc -Wall -Wextra -g3 Programa.c -o output/Programa
+[?2004l[01m[KPrograma.c:[m[K In function ‘[01m[Kcriar_tarefa[m[K’:
+[01m[KPrograma.c:34:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 | node* criar_tarefa([01;35m[Kchar *linha[m[K){
+      |                    [01;35m[K~~~~~~^~~~~[m[K
+[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ gcc -Wall -Wextra -g3 Programa.c -o output/Programa[12Pcd ~/Implementacao-1-Processos/mvpb/srcls[Kgcc -Wall -Wextra -g3 Programa.c -o output/Programamake test[K[K clean[K clean[1Ptestclean[1Ptest[K cleangcc -Wall -Wextra -g3 Programa.c -o output/Programamake test[K[K cleancd ~/Implementacao-1-Processos/mvpb[Kgit push -u origin maincommit -m "7 rubrica, Erros + outras situações"add .[K./output/Programa arg1 arg2 arg3quivo_inexistente.pf[Kpwdwhoami[2Pdate./processflow arg1 arg2quivo_inexistente.pf[10Poutput/Programa teste.pf[Kcat teste.pf[50@printf 'task listar /bin/ls -l\nrun listar\nexit\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./output/Programa[Kcat /tmp/saida.txt[1P./output/Programa
+[?2004lProcessflow> [?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb/src[01;32mmarcus@Antonio[00m:[01;34m~/Implementacao-1-Processos/mvpb/src[00m$ cd [7m~/Implementacao-1-Processos/mvpb[27m~/Implementacao-1-Processos/mvpb
+[?2004l[?2004h]0;marcus@Antonio: ~/Implementacao-1-Processos/mvpb[01;32mmarcus@Antonio[00m:[01;34m~/Impl
